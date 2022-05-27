@@ -132,6 +132,21 @@ p {
   color: var(--accent-color);
 }
 
+.site-nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.site-nav-item {
+  position: relative;
+}
+
 /* Контакти */
 .contact-item + .contact-item {
   margin-left: 50px;
@@ -394,6 +409,7 @@ img {
 .team-icon-link:hover .team-icon,
 .team-icon-link:focus .team-icon {
   fill: var(--white-color);
+  /* fill: currentColor; */
 }
 
 /* FOOTER */
