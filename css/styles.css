@@ -646,7 +646,11 @@ img {
   background-color: var(--third-background-color);
 
   cursor: pointer;
+
+  transition: box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--white-color);
