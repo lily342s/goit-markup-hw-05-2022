@@ -267,7 +267,7 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -505,7 +505,7 @@ img {
   align-items: center;
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .team-icon-link:hover,
@@ -539,7 +539,7 @@ img {
   align-items: center;
   color: var(--main-icon-fill-color);
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .trademark-link:hover .icon-trademark,
@@ -765,7 +765,8 @@ img {
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
 }
 
-.project-image:hover .project-overlay {
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
   transform: translateY(0);
 }
 
